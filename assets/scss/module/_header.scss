@@ -1,0 +1,35 @@
+.header {
+	&__inner {
+		display: flex;
+		align-items: center;
+		min-height: 102px;
+	}
+	&__logo {
+		margin-right: 60px;
+	}
+}
+
+.nav {
+	width: 100%;
+	max-width: 770px;
+	margin-left: auto;
+	&__link {
+		color: #333333;
+		font-size: 12px;
+		line-height: 12px;
+		letter-spacing: 0.2em;
+		text-transform: uppercase;
+
+		padding: 3.9px 0;
+		margin-right: 60px;
+		
+		border-top: 1px solid transparent;
+		border-bottom: 1px solid transparent;
+
+		transition: border-top ease .5s, border-bottom ease .5s;
+		&:hover {
+			border-top: 1px solid #333333;
+			border-bottom: 1px solid #333333;
+		}
+	}
+}

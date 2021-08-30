@@ -1,0 +1,90 @@
+.container {
+	width: 100%;
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.intro {
+	&__inner {
+		display: flex;
+		align-items: center;
+	}
+	&__project {
+		font-weight: 300;
+		font-size: 64px;
+		line-height: 64px;
+		color: #BDBDBD;
+	}
+	&__project-title {
+		font-size: 64px;
+		line-height: 64px;
+		color: #333333;
+
+		margin-bottom: 90px;
+	}
+	&__swiper-button--wrap {
+		display: flex;
+		min-height: 50px;
+
+		margin-bottom: 90px;
+	}
+	.swiper-button-prev,
+	.swiper-button-next {
+		position: static;
+		margin: 0;
+
+		width: 53px;
+		height: 53px;
+		border: 1px solid #F2F2F2;
+		&:first-child {
+			margin-right: 23px;
+		}
+		&:nth-child(2) img {
+			transform: rotate(180deg);
+		}
+		&::after {
+			content: '';
+			background: url('../../img/arrow-right-long.svg');
+		}
+	}
+	.swiper-button-next.swiper-button-disabled,
+	.swiper-button-prev.swiper-button-disabled {
+		background: #F9F9F9;
+		border: 1px solid #F2F2F2;
+		opacity: 1;
+	}
+	.swiper-pagination {
+		position: relative;
+		text-align: left;
+		min-height: 30px;
+
+		font-family: 'TT Hoves';
+		font-style: normal;
+		font-weight: normal;
+		font-size: 24px;
+		line-height: 24px;
+
+		color: #BDBDBD;
+	}
+	.swiper-pagination-current,
+	.swiper-pagination-total {
+		&:first-child {
+			margin-right: 20px;
+		}
+		&:last-child {
+			margin-left: 20px;
+		}
+		&::before {
+			content: '0';
+		}
+	}
+	&__right {
+		width: 100%;
+		max-width: 770px;
+		height: 829px;
+
+		margin: 0;
+		margin-left: auto;
+	}
+}
